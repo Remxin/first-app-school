@@ -3,7 +3,7 @@ const app = express()
 const PORT = process.env.PORT || 3000;
 
 app.get("/", function (req, res) {
-    res.send("<h1>my app on heroku!</h1>")
+   res.send({ imie: "Dawid", nazwisko: "Nabaglo", klasa: "3i1", grupa: "2" })
 })
 
 app.listen(PORT, function () {
